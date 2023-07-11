@@ -55,15 +55,15 @@ public class CustomRepositoryMetadata implements RepositoryMetadata {
         return this.domainClass;
     }
 
-//    @Override
-//    public TypeInformation<?> getIdTypeInformation() {
-//        return this.delegate.getIdTypeInformation();
-//    }
-//
-//    @Override
-//    public TypeInformation<?> getDomainTypeInformation() {
-//        return ClassTypeInformation.from(this.domainClass);
-//    }
+    @Override
+    public TypeInformation<?> getIdTypeInformation() {
+        return this.delegate.getIdTypeInformation();
+    }
+
+    @Override
+    public TypeInformation<?> getDomainTypeInformation() {
+        return ClassTypeInformation.from(this.domainClass);
+    }
 
     /*
      * (non-Javadoc)
